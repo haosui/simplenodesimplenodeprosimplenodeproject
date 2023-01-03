@@ -24,5 +24,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           nohup node app.js &
+          cd /home
           ls -la
           pwd
+          mkdir abcdungpv
