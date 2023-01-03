@@ -25,6 +25,7 @@ jobs:
         run: |
           nohup node app.js &
           cd /home
-          ls -la
           pwd
-          mkdir abcdungpv
+          ls -la
+          whoami
+          sudo mkdir abcdungpv
