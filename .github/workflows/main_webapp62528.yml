@@ -23,4 +23,5 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          node app.js >> app.log 
+          npm install forever -g
+          forever start app.js
