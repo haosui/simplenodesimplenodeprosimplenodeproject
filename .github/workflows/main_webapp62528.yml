@@ -23,5 +23,4 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install forever -g
-          forever start app.js
+          nohup node app.js &
