@@ -23,4 +23,4 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          nohup node index.js >> app.log 2>&1 &
+          nohup node app.js >> app.log 2>&1 &
