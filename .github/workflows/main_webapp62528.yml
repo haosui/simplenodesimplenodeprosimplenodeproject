@@ -22,4 +22,5 @@ jobs:
           node-version: '16.x'
 
       - name: npm install, build, and test
-        run: ls -la
+        run: |
+          nohup node index.js >> app.log 2>&1 &
