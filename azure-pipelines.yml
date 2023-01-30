@@ -1,4 +1,12 @@
 # Node.js Express Web App to Linux on Azure
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'tsdvcloudteam-pay-as-you-go(045e9db6-0b49-48c1-bc08-197693e75987)'
+    appType: 'functionAppLinux'
+    appName: 'fucntionapp23ccc123'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'NODE|16'
+    startUpCommand: 'node -version'
 # Build a Node.js Express app and deploy it to Azure as a Linux web app.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
