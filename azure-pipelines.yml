@@ -55,7 +55,7 @@ stages:
       artifact: drop
     
     - task: AzureFunctionApp@1
-      displayName: 'Archive files'
+      displayName: 'Archive files 2'
       inputs:
           azureSubscription: 'tsdvcloudteam-pay-as-you-go(045e9db6-0b49-48c1-bc08-197693e75987)'
           appType: 'functionAppLinux'
