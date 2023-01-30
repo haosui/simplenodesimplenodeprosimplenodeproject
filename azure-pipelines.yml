@@ -61,7 +61,7 @@ stages:
           appType: 'functionAppLinux'
           appName: 'fucntionapp23ccc123'
           runtimeStack: 'NODE|16'
-          startUpCommand: 'node -version'
+          startUpCommand: 'node -v'
 
 
 - stage: Deploy
