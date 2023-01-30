@@ -60,7 +60,6 @@ stages:
           azureSubscription: 'tsdvcloudteam-pay-as-you-go(045e9db6-0b49-48c1-bc08-197693e75987)'
           appType: 'functionAppLinux'
           appName: 'fucntionapp23ccc123'
-          package: '$(System.DefaultWorkingDirectory)/**/*.zip'
           runtimeStack: 'NODE|16'
           startUpCommand: 'node -version'
 
