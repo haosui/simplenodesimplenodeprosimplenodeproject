@@ -57,14 +57,24 @@ stages:
     - task: AzureResourceManagerTemplateDeployment@3
       inputs:
         deploymentScope: 'Resource Group'
-        azureResourceManagerConnection: 'tsdvcloudteam-pay-as-you-go (045e9db6-0b49-48c1-bc08-197693e75987)'
+        azureResourceManagerConnection: 'tsdvcloudteam-pay-as-you-go(045e9db6-0b49-48c1-bc08-197693e75987)'
         subscriptionId: '045e9db6-0b49-48c1-bc08-197693e75987'
         action: 'Create Or Update Resource Group'
-        resourceGroupName: 'testkubenetes'
-        location: 'Central India'
+        resourceGroupName: 'retwtwttrwtew-rg'
+        location: 'Australia Central'
         templateLocation: 'URL of the file'
         csmFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.web/app-service-docs-linux/azuredeploy.json'
-        csmParametersFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/c4bafdbcdc16f06583d8eef4531c37f60284ddd8/quickstarts/microsoft.web/app-service-docs-linux/azuredeploy.parameters.json'
+        csmParametersFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.web/app-service-docs-linux/azuredeploy.parameters.json'
+        overrideParameters: |
+          {
+              "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+              "contentVersion": "1.0.0.0",
+              "parameters": {
+                  "webAppName": {
+                      "value": "armteamplated83287235"
+                  }
+              }
+          }
         deploymentMode: 'Incremental'
 
 - stage: Deploy
