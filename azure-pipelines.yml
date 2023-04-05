@@ -6,6 +6,10 @@
 trigger:
 - main
 
+parameters:
+- name: params # name of the parameter; required
+  type: object
+
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
@@ -37,6 +41,7 @@ stages:
     - task: CmdLine@2
       inputs:
         script: |
+          echo parameters.params
           echo 'Write your commands here'            
           echo 'Hello world'
 
