@@ -41,7 +41,7 @@ stages:
     - task: CmdLine@2
       inputs:
         script: |
-          echo ${{ parameters.params.object.key }}
+          echo ${{ parameters.params.things[0] }}
           echo 'Write your commands here'            
           echo 'Hello world'
 
