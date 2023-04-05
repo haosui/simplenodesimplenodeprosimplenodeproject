@@ -9,6 +9,7 @@ trigger:
 parameters:
 - name: params # name of the parameter; required
   type: object
+  default: abc
 
 variables:
 
@@ -41,7 +42,7 @@ stages:
     - task: CmdLine@2
       inputs:
         script: |
-          echo parameters.params
+          echo ${{ parameters.params }}
           echo 'Write your commands here'            
           echo 'Hello world'
 
