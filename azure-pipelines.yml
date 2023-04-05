@@ -9,7 +9,6 @@ trigger:
 parameters:
 - name: params # name of the parameter; required
   type: string
-  default: abc
 
 variables:
 
