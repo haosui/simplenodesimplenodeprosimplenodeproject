@@ -8,7 +8,7 @@ trigger:
 
 parameters:
 - name: params # name of the parameter; required
-  type: object
+  type: string
   default: abc
 
 variables:
